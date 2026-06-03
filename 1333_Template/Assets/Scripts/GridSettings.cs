@@ -5,17 +5,17 @@ using UnityEngine;
 
 public class GridSettings : ScriptableObject
 {
-    [SerializeField] private int _gridSizeX =10;
-    [SerializeField] private int _gridSizeY = 10;
+    [SerializeField] private int _gridsizeX =10;
+    [SerializeField] private int _gridsizeY = 10;
     [SerializeField] private float _nodeSize = 1;
     [SerializeField] private bool _useXZPlane = true;
 
-    public int GridsizeX => _gridSizeX;
-    public int GridsizeY => _gridSizeY;
+    public int GridsizeX => _gridsizeX;
+    public int GridsizeY => _gridsizeY;
     public float NodeSize => _nodeSize;
     public bool UseXZPlane => _useXZPlane;
 
-
+    
 
 
 }
