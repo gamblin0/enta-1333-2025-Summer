@@ -9,6 +9,7 @@ public class GridSettings : ScriptableObject
     [SerializeField] private int _gridsizeY = 10;
     [SerializeField] private float _nodeSize = 1;
     [SerializeField] private bool _useXZPlane = true;
+    [SerializeField] private bool _AllowDiagonal;
 
     public int GridsizeX => _gridsizeX;
     public int GridsizeY => _gridsizeY;
