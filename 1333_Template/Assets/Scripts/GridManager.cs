@@ -39,8 +39,8 @@ public class GridManager : MonoBehaviour
                 {
                     Name = $"Cell_{(x + _gridSettings.GridsizeX * x + y)}",
                     WorldPosition = worldPos,
-                    Walkable = true, //Default all nodes to walkable, modified later
-                    Weight = 1 //default weight, modified later
+                    //Walkable = true, //Default all nodes to walkable, modified later
+                    //Weight = 1 //default weight, modified later
 
                 };
 
@@ -65,8 +65,8 @@ public class GridManager : MonoBehaviour
                 {
                     Name = $"Cell_{x}+{y}",
                     WorldPosition = node.WorldPosition,
-                    Walkable = node.Walkable,
-                    Weight = node.Weight
+                    //Walkable = node.Walkable,
+                    //Weight = node.Weight
                 });
             }
         }
