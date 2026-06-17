@@ -22,7 +22,7 @@ public class NaivePathfinder
         path.Add(current);
         visited.Add(current);
 
-        return (path, visited);
+       
 
         while (current != end)
         {
@@ -36,6 +36,9 @@ public class NaivePathfinder
                 next = GetNextCardinalNaivePosition(current, end);
             }
         }
+
+        return (path, visited);
+
     }
 
     private Vector2Int GetNextCardinalNaivePosition(Vector2Int current, Vector2Int target)
