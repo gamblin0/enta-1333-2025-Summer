@@ -111,9 +111,10 @@ public class GridManager : MonoBehaviour
         }
     }
 
-
+#if UNITY_EDITOR
     //Create a custom editor button that when pressed, calls PopulateDebugList and refreshes the Editor GUI
     [CustomEditor(typeof(GridManager))]
+
     public class GridManagerEditor: Editor
     {
         public override void OnInspectorGUI()
@@ -133,4 +134,5 @@ public class GridManager : MonoBehaviour
             }
         }
     }
+#endif
 }
